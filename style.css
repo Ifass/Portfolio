@@ -1,3 +1,7 @@
+
+
+/* === Base Styles === */
+/* === Base Styles === */
 *{
     margin: 0;
     padding: 0;
@@ -19,10 +23,15 @@ body{
     justify-content: center;
 }
 
+/* container */
+/* container */
 .container{
     padding: 10px 3%; 
 }
 
+
+/* === Navigation === */
+/* === Navigation === */
 nav{
     display: flex;
     justify-content: space-between;
@@ -33,20 +42,6 @@ nav{
 .logo{
     padding: 20px 0px;
     width: 300px;
-}
-
-
-/* Fonts */
-.poetsen-one-regular {
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.michroma-regular {
-  font-family: "Michroma", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 nav ul li{
@@ -81,7 +76,21 @@ nav ul li a:hover::after{
 }
 
 
+/* Hide menu icon on desktop */
+/* Hide menu icon on desktop */
+ .menu-icon {
+  display: none;
+ }  
 
+
+nav ul {
+  display: none;
+}
+
+
+
+/* ====Hero Section ==== */
+/* ====Hero Section ==== */
 .header-text{
     margin-top: 20px;
     margin-left: 40px;
@@ -123,3 +132,87 @@ nav ul li a:hover::after{
   color: #ccc;
 }
 
+
+
+ /* Fonts */
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* === Resonsive Css for mobile Devices === */
+/* === Responsive CSS for Mobile Devices === */
+
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #080808;
+        position: absolute;
+        top: 80px;
+        right: 30px;
+        width: 200px;
+        border: 1px solid #ae8035;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 40px;
+        color: #efeeeb;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .header-text {
+        text-align: center;
+        margin-left: 0;
+        padding: 0 10px;
+        font-size: 24px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text h3 {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .header-description {
+        margin: 10px auto;
+        font-size: 14px !important;
+        margin-left: 0 !important;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-col-1 {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
