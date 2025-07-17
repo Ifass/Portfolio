@@ -9,8 +9,11 @@
     box-sizing: border-box;
 
 }
-body{
-    background-color: #080808;
+
+
+
+body{  
+    background-color: #000000;
     color: #fff;
 }
 
@@ -78,14 +81,12 @@ nav ul li a:hover::after{
 
 /* Hide menu icon on desktop */
 /* Hide menu icon on desktop */
- .menu-icon {
+
+ 
+
+.menu-icon {
   display: none;
  }  
-
-
-nav ul {
-  display: none;
-}
 
 
 
@@ -206,7 +207,18 @@ nav ul {
         text-align: center;
     }
 
-    .row {
+
+       /* button */
+    .hire-me-container {
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+
+  
+
+
+.row {
         flex-direction: column;
         align-items: center;
     }
@@ -215,4 +227,3 @@ nav ul {
         width: 90%;
         margin: 20px 0;
     }
-}
