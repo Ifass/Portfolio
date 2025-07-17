@@ -10,8 +10,6 @@
 
 }
 
-
-
 body{  
     background-color: #000000;
     color: #fff;
@@ -25,6 +23,24 @@ body{
     background-position: center;
     justify-content: center;
 }
+
+
+/* Fonts */
+/* Fonts */
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 
 /* container */
 /* container */
@@ -56,25 +72,36 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-family: "biorhyme-expanded", sans-serif;
+    font-family: "thin", sans-serif;
+    letter-spacing: 7px;
     font-weight: 500;
     font-size: 18px;
     position: relative;
+    padding: 5px 10px;
+    z-index: 1;
 }
 
 nav ul li a::after{
     content: '';
     width: 0;
-    height: 2px;
-    background: #8B0000;
-    position: absolute;
-    left: 0;
+    height: px;
+    z-index: -1;
+    transition: width 0.5s ease-in-out;
+    border-radius: 5px;
     bottom: -6px;
 }
 
 nav ul li a:hover::after{
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     transition: width 0.5s ease-in-out;
+
+    overflow: hidden;
+    box-shadow: 0 0 5px #00f7ff, 0 0 40px #00f7ff, 0 0 80px #00f7ff;
 
 }
 
@@ -93,16 +120,16 @@ nav ul li a:hover::after{
 /* ====Hero Section ==== */
 /* ====Hero Section ==== */
 .header-text{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 40px;
-    font-size: 30px;
-    font-family: poetsen-one, sans-serif;
+    font-size: 25px;
+    font-family: "poetsen-one", sans-serif;
     font-weight: 400;
     font-weight: 800;
 }
 
 .header-text p{
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 20px;
     font-weight: 400;
 }
@@ -133,20 +160,128 @@ nav ul li a:hover::after{
   color: #ccc;
 }
 
+/* === About Section === */
+/* === About Section === */
 
 
- /* Fonts */
-.poetsen-one-regular {
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+#about{
+    padding: 80px  0;
+    color: #ababab;
+} 
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.michroma-regular {
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+.about-col-2{
+    flex-basis: 60%;
+    margin-left: 20px;
+    margin-top: 0;
+} 
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #b5b2ae;
+}
+
+.about-description {
+    padding: 50px 0;
+    font-size: 18px;
+    font-family: "Michroma", sans-serif;
+    margin-right: 110px;
+    color: #ababab;
+}
+
+.tab-titles {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 20px 0 40px;
+    /* margin-right: 600px; */
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #af2323;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transition:  0.5s;
+}
+.tab-link:hover::after {
+    width: 100%;
+    background: #af2323;
+}           
+.tab-link.active-link::after {
+    width: 50%;
+}
+
+
+/* Button style (Hire me) */
+.hire-me-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-right: 60px;
+    margin-left: 400px;
+    gap: 40px;
+}
+
+.hire-me-btn {
+  display: inline-block;
+  padding: 12px 28px;
   font-family: "Michroma", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #000000;
+  background-color: #82dfdf;
+  border: 2px solid #353333;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  
 }
+
+.hire-me-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.7s ease-in-out;
+  box-shadow: 0 0 5px #00f7ff, 0 0 40px #00f7ff, 0 0 80px #00f7ff;
+  transform: scale(1.05);
+}
+
+
+
 
 
 
@@ -168,6 +303,7 @@ nav ul li a:hover::after{
         z-index: 100;
     }
 
+
     nav ul.show {
         display: flex;
     }
@@ -187,7 +323,7 @@ nav ul li a:hover::after{
         text-align: center;
         margin-left: 0;
         padding: 0 10px;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .header-text h1 {
@@ -213,17 +349,24 @@ nav ul li a:hover::after{
         justify-content: center;
         margin-right: 0;
     }
+
+    .hire-me-container {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 40px auto 0 auto;
+       gap: 20px;
+       width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
   
 
 
-.row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-col-1 {
-        width: 90%;
-        margin: 20px 0;
-    }
