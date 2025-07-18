@@ -394,14 +394,14 @@ tab-links.active-link{
     }
     
 
-    .auto-type {
+    /* .auto-type {
         display: inline-block;
         min-height: 2.4em;
         line-height: 1.2;
         overflow: hidden;
         white-space: nowrap;
         
-    }
+    } */
   
 
 
