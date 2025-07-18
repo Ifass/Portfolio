@@ -120,12 +120,10 @@ nav ul li a:hover::after{
 /* ====Hero Section ==== */
 /* ====Hero Section ==== */
 .header-text{
-    margin-top: 10px;
     margin-left: 40px;
     font-size: 25px;
     font-family: "poetsen-one", sans-serif;
     font-weight: 400;
-    font-weight: 800;
 }
 
 .header-text p{
@@ -163,10 +161,8 @@ nav ul li a:hover::after{
 /* === About Section === */
 /* === About Section === */
 
-
-
 #about{
-    padding: 80px  0;
+    padding: 60px;
     color: #ababab;
 } 
 
@@ -174,11 +170,15 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-
-    align-items: center;
 }
 
+.sub-title{
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #b5b2ae;
+}
 
 .about-col-1{
     flex-basis: 35%;
@@ -188,9 +188,8 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 25px;
     padding: 10px;
-
-
     max-width: 100%;
+    margin-top: 100px;
 }
 
 
@@ -208,7 +207,7 @@ nav ul li a:hover::after{
 
 .about-description {
     padding: 50px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Michroma", sans-serif;
     margin-right: 110px;
     color: #ababab;
@@ -216,37 +215,64 @@ nav ul li a:hover::after{
 
 .tab-titles {
     display: flex;
-    /* justify-content: space-between; */
     margin-top: 20px 0 40px;
-    /* margin-right: 600px; */
+      font-family: "Merienda", cursive;
 }
 
 .tab-links{
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     cursor: pointer;
     position: relative;
 }
 
-.tab-link::after {
+
+.tab-links::after {
     content: '';
     width: 0;
-    height: 2px;
+    height: 3px;
     background: #af2323;
     position: absolute;
     bottom: -8px;
     left: 0;
     transition:  0.5s;
 }
-.tab-link:hover::after {
+.tab-links:hover::after {
     width: 100%;
     background: #af2323;
 }           
-.tab-link.active-link::after {
+.tab-links.active-link::after {
     width: 50%;
 }
 
+.tab-links.active-link:hover::after{
+    width: 100%;
+}
+
+
+tab-links.active-link{
+    padding: 30px;
+}
+
+.tab-items {
+    display: none;
+    margin-top: 290px;
+}
+
+.skills-list {
+    margin-top: 20px;
+    margin-right: 380px;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #791837;
+    font-size: 16px;
+}
 
 /* Button style (Hire me) */
 .hire-me-container {
