@@ -25,6 +25,7 @@ body{
 }
 
 
+
 /* Fonts */
 /* Fonts */
 .poetsen-one-regular {
@@ -124,6 +125,19 @@ nav ul li a:hover::after{
     font-size: 25px;
     font-family: "poetsen-one", sans-serif;
     font-weight: 400;
+}
+
+.mini-intro{
+    color: aqua;
+    font-size: large;
+}
+
+.typing-header{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 20px;
 }
 
 .header-text p{
@@ -260,10 +274,10 @@ tab-links.active-link{
     margin-top: 290px;
 }
 
-.skills-list {
+/* .skills-list {
     margin-top: 20px;
     margin-right: 380px;
-}
+} */
 
 .tab-contents ul li{
     list-style: none;
@@ -274,12 +288,21 @@ tab-links.active-link{
     font-size: 16px;
 }
 
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+ 
+
 /* Button style (Hire me) */
 .hire-me-container {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-right: 60px;
     margin-left: 400px;
     gap: 40px;
@@ -317,10 +340,28 @@ tab-links.active-link{
 
 
 
+
+
 /* === Resonsive Css for mobile Devices === */
 /* === Responsive CSS for Mobile Devices === */
 
 @media screen and (max-width: 768px) {
+
+    #header{
+    width: 100%;
+    height: 100vh;
+    display: center;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+
+    /* .about-col-1 img {
+        width: 80%;
+        max-width: 100%;
+        margin-top: 20px;
+    } */
+
 
     nav ul {
         display: none;
@@ -328,8 +369,8 @@ tab-links.active-link{
         background-color: #080808;
         position: absolute;
         top: 80px;
-        right: 30px;
-        width: 200px;
+        /* right: 30px; */
+        /* width: 200px; */
         border: 1px solid #ae8035;
         padding: 10px;
         z-index: 100;
@@ -344,22 +385,36 @@ tab-links.active-link{
         display: block;
         cursor: pointer;
         font-size: 40px;
+        margin-right: 20px;
         color: #efeeeb;
     }
 
     .logo {
         width: 150px;
     }
+    
+
+    .auto-type {
+        display: inline-block;
+        min-height: 2.4em;
+        line-height: 1.2;
+        overflow: hidden;
+        white-space: nowrap;
+        
+    }
+  
+
 
     .header-text {
         text-align: center;
         margin-left: 0;
-        padding: 0 10px;
-        font-size: 22px;
+        padding:  0px;
+        font-size: 16px;
     }
 
-    .header-text h1 {
+    .header-text, h1 {
         font-size: 40px;
+        min-width: 3.5em;
     }
 
     .header-text h3 {
@@ -368,12 +423,49 @@ tab-links.active-link{
     }
 
     .header-description {
-        margin: 10px auto;
+        margin: 10px;
         font-size: 14px !important;
         margin-left: 0 !important;
         padding: 0 20px;
         text-align: center;
     }
+
+
+
+
+
+      .about-col-1 img {
+        display: center;
+        justify-content: center;
+        
+        margin-top: 20px;
+        width: 60%;
+        max-width: 250px;
+    }
+
+    .about-col-2 {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .about-description {
+        padding: 20px 0;
+        margin-right: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .sub-title {
+        font-size: 36px;
+    }
+
+    .hire-me-container {
+        margin: 40px auto 0 auto;
+    }
+
+
+
 
 
        /* button */
@@ -399,6 +491,6 @@ tab-links.active-link{
 
 }
 
-  
+}
 
 
