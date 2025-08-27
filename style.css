@@ -471,6 +471,7 @@ tab-links.active-link {
     font-family: "Michroma", sans-serif;
     font-size: 16px;
     justify-content: center;
+    
 }
 
 
@@ -480,10 +481,19 @@ tab-links.active-link {
     font-family: "Michroma", sans-serif;
 }
 
+.last41{
+    font-size: 15px;
+    font-family: "Michroma", sans-serif;
+    text-align: center;
+    padding-right: 15%;
+
+}
+
 .last5{
     font-family: "Michroma", sans-serif;
     font-size: 16px;
     padding-left: 80%;
+    padding-top: 0%;
     padding-bottom: 30%;
 }
 
