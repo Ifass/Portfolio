@@ -446,12 +446,46 @@ tab-links.active-link {
     color: #ababab;
 }
 
+.last1{
+    padding: 25px ;
+    font-size: 45px;
+    font-weight: 200;
+    color: #632fc5;
+    font-family: "Michroma", sans-serif;
+    margin-right: 110px;
+    margin: 0px;
+}
+
+.last2{
+    padding: 15px;
+    font-size: 35px;
+    font-weight: 200;
+    color: #ae8035;
+    font-family: "Michroma", sans-serif;
+    padding-left: 200px;
+    margin: 0px;
+}
+
+.last3{
+    padding: 5%;
+    font-family: "Michroma", sans-serif;
+    font-size: 16px;
+    justify-content: center;
+}
 
 
+.last4{
+    color: #b4302b;
+    font-size: 17px;
+    font-family: "Michroma", sans-serif;
+}
 
-
-
-
+.last5{
+    font-family: "Michroma", sans-serif;
+    font-size: 16px;
+    padding-left: 80%;
+    padding-bottom: 30%;
+}
 
 
 
