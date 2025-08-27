@@ -1,6 +1,7 @@
+
 /* === Base Styles === */
 /* === Base Styles === */
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -8,12 +9,12 @@
 
 }
 
-body {
+body{  
     background-color: #000000;
     color: #fff;
 }
 
-#header {
+#header{
     width: 100%;
     height: 100vh;
     background-image: url(https://i.postimg.cc/pLY49QwJ/UI-Landing-Page.png);
@@ -27,15 +28,15 @@ body {
 /* Fonts */
 /* Fonts */
 .poetsen-one-regular {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .michroma-regular {
-    font-family: "Michroma", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -43,32 +44,32 @@ body {
 
 /* container */
 /* container */
-.container {
-    padding: 10px 3%;
+.container{
+    padding: 10px 3%; 
 }
 
 
 /* === Navigation === */
 /* === Navigation === */
-nav {
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: wrap;
 }
 
-.logo {
+.logo{
     padding: 20px 0px;
     width: 230px;
 }
 
-nav ul li {
+nav ul li{
     display: inline-block;
     list-style: none;
     margin: 5px 50px;
 }
 
-nav ul li a {
+nav ul li a{
     color: #fff;
     text-decoration: none;
     font-family: "thin", sans-serif;
@@ -80,7 +81,7 @@ nav ul li a {
     z-index: 1;
 }
 
-nav ul li a::after {
+nav ul li a::after{
     content: '';
     width: 0;
     height: px;
@@ -90,7 +91,7 @@ nav ul li a::after {
     bottom: -6px;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after{
     background: #000000;
     position: absolute;
     top: 0;
@@ -108,67 +109,70 @@ nav ul li a:hover::after {
 /* Hide menu icon on desktop */
 /* Hide menu icon on desktop */
 
-
+ 
 
 .menu-icon {
-    display: none;
-}
+  display: none;
+ }  
 
 
 
 /* ====Hero Section ==== */
 /* ====Hero Section ==== */
-.header-text {
+.header-text{
     margin-left: 40px;
-    font-size: 25px;
+    font-size: 20;
     font-family: "poetsen-one", sans-serif;
     font-weight: 400;
 }
 
-.mini-intro {
+.mini-intro{
     color: aqua;
     font-size: large;
+
 }
 
-.typing-header {
+.typing-header{
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 50px;
 }
 
-.header-text p {
+.header-text p{
     margin-top: 10%;
     font-size: 20px;
     font-weight: 400;
 }
 
-.header-text h1 {
+.header-text h1{
     font-size: 60px;
     font-weight: 800;
     margin-top: 20px;
 }
 
-.header-text h1 span {
+.header-text h1 span{
     color: #ae8035;
 
 }
 
-.header-text h3 {
+.header-text h3{
     font-weight: 800;
     margin: 20px 50px;
 }
 
 .header-description {
-    font-size: 16px !important;
-    font-family: "Michroma", sans-serif;
-    font-weight: 400;
-    margin-top: 0px !important;
-    margin-left: 80px !important;
-    line-height: 1.6;
-    color: #ccc;
+  font-size: 16px !important;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  margin-top: 0px !important;
+  margin-left: 80px !important;
+  line-height: 1.6;
+  color: #ccc;
 }
+
+
 
 
 /* Button style (Hire me) */
