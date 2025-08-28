@@ -366,8 +366,6 @@ tab-links.active-link {
 /* portfolio section */
 
 
-/* portfolio section */
-
 .portfolio {
     padding: 100px;
     color: #ababab;
@@ -406,9 +404,10 @@ tab-links.active-link {
 .project1-col-1 img {
     width: 100%;
     border-radius: 25px;
-    padding: 0px;
+    padding: 20px;
     max-width: 100%;
     margin-top: 50px;
+    box-shadow: 0 8px 25px rgba(750, 730, 730, .55);
 }
 
 
