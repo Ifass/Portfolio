@@ -402,7 +402,7 @@ tab-links.active-link {
 
 
 .project1-col-1 img {    
-    width: 99%;
+    width: 99.9%;
     border-radius: 25px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     padding: 20px;
