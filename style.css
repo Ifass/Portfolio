@@ -413,7 +413,7 @@ tab-links.active-link {
 
 .project1-col-1:hover img {  
     transform: scale(1.15);
-    box-shadow: 0 15px 40px rgba(200, 200, 200, 0.5);
+    box-shadow: 0 8px 25px rgba(750, 730, 730, .55);
 }
 
 
