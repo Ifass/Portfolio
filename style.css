@@ -401,13 +401,19 @@ tab-links.active-link {
 }
 
 
-.project1-col-1 img {
+.project1-col-1 img {    
     width: 100%;
     border-radius: 25px;
     padding: 20px;
     max-width: 100%;
     margin-top: 50px;
     box-shadow: 0 8px 25px rgba(750, 730, 730, .55);
+    transform: scale(1.15);
+}
+
+.project1-col-1 img {  
+    transform: scale(1.15);
+    box-shadow: 0 15px 40px rgba(200, 200, 200, 0.5);
 }
 
 
