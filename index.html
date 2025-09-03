@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/onm0wxc.css">
 
 
-
     <!-- Google Fonts -->
     <link rel="stylesheet" href="your-adobe-fonts-stylesheet-url">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
@@ -34,7 +33,53 @@
     <link rel="stylesheet" href="style.css">
 
 
+  <style>
+    /* Fullscreen preloader */
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Hide page content initially */
+    #content {
+      display: none;
+    }
+  </style>
 </head>
+
+
+
+<body>
+
+  <!-- Preloader with Lottie -->
+  <div id="preloader">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+    <dotlottie-wc
+      src="https://lottie.host/9636a65c-f113-45d1-b5f2-cbb285cbd628/Cyal2WycvS.lottie"
+      style="width: 250px; height: 300px"
+      speed="1.3"
+      autoplay
+      loop
+    ></dotlottie-wc>
+  </div>
+
+
+
+
+
+
+
+
+
 
 <body>
 
@@ -335,6 +380,40 @@
 
 
 
+
+       <!-- Preloader  -->
+        <!-- Preloader  -->
+
+  <script>
+    // Wait for window to fully load
+    window.addEventListener('load', () => {
+      // Force at least 1.5 seconds delay for the preloader
+      setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+      }, 5000); // 1500ms = 1.5 seconds
+    });
+  </script>
+
+
+
+       <!-- Loading Animation -->
+    <script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+  type="module"
+></script>
+
+<dotlottie-wc
+  src="https://lottie.host/9636a65c-f113-45d1-b5f2-cbb285cbd628/Cyal2WycvS.lottie"
+  style="width: 300px;height: 300px"
+  speed="2"
+  autoplay
+  loop
+></dotlottie-wc>
+
+
+        <!-- Link tab -->
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -378,7 +457,9 @@
         }
     </script> -->
 
-    // Smooth scroll after animation
+
+
+    <!-- // Smooth scroll after animation -->
 
     <script>
         document.querySelectorAll('#nav-links a').forEach(link => {
