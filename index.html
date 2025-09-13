@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Pofolio Website</title>
+    <title>Personal Portfolio Website</title>
 
     <!-- Adobe Font (Biorhyme Expanded) -->
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/onm0wxc.css"> -->
     <link rel="stylesheet" href="https://use.typekit.net/onm0wxc.css">
 
 
@@ -33,10 +32,9 @@
     <link rel="stylesheet" href="style.css">
 
 
-  <style>
-    /* Fullscreen preloader */
-
-    #preloader {
+    <style>
+        /* Fullscreen preloader */
+        /* #preloader {
       position: fixed;
       top: 0;
       left: 0;
@@ -47,21 +45,21 @@
       justify-content: center;
       align-items: center;
       z-index: 9999;
-    }
+    } */
 
-    /* Hide page content initially */
-    #content {
+        /* Hide page content initially */
+        /* #content {
       display: none;
     }
-  </style>
-</head>
+    </style>
+</head> */
 
 
 
 <body>
 
-  <!-- Preloader with Lottie -->
-  <div id="preloader">
+    <!-- Preloader with Lottie -->
+    <!-- <div id="preloader">
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
     <dotlottie-wc
       src="https://lottie.host/9636a65c-f113-45d1-b5f2-cbb285cbd628/Cyal2WycvS.lottie"
@@ -70,7 +68,7 @@
       autoplay
       loop
     ></dotlottie-wc>
-  </div>
+  </div> -->
 
 
 
@@ -81,289 +79,309 @@
 
 
 
-<body>
+    <body>
 
-    <div id="header">
-        <div class="container">
-            <nav class="bg-img">
-                <img src="https://i.postimg.cc/25tchPJD/Logo1.png" alt="Logo" class="logo">
-                <div class="menu-icon" onclick="toggleMenu()">☰</div>
-                <ul id="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                </ul>
-            </nav>
+        <div id="header">
+            <div class="container">
+                <nav class="bg-img">
+                    <img src="https://i.postimg.cc/25tchPJD/Logo1.png" alt="Logo" class="logo">
+                    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                    <ul id="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
 
-            <div class="header-text">
-                <p class="mini-intro">Web Developer</p>
-                <h1 class="typing-header">
-                    Hi, I'm <span class="auto-type" style="color: #ae8035;"></span>
-                </h1>
-                <h3>From NOWHERE...</h3>
-                <p class="header-description">
-                    I am a passionate web developer with<br>
-                    a keen interest in creating dynamic and<br>
-                    responsive web applications.<br>
-                    I love coding , enjoy learning AI and new technologies.
-                </p>
-
-                <div class="hire-me-container">
-                    <a href="#contact" class="hire-me-btn">Hire Me</a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    </div>
-
-
-    <!-------- About section --------->
-    <!-------- About section --------->
-
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="about-col-1">
-                    <img src="https://i.postimg.cc/280B05tD/Img.png" alt="Profile Picture">
-                </div>
-
-                <div class="about-col-2">
-                    <h1 class="about-sub-title">About Me</h1>
-                    <p class="about-description">
-                        I am Abu Umar, a web developer with a passion for creating dynamic and responsive web
-                        applications. I have experience in various web technologies and enjoy learning new skills to
-                        enhance my development capabilities.
-                        My journey in web development started with a fascination for how websites work and the
-                        technologies behind them. Over the years, I have honed my skills in HTML, CSS, JavaScript, and
-                        various frameworks to build user-friendly and efficient web applications.
-                        I believe in continuous learning and strive to stay updated with the latest trends in web
-                        development. My goal is to create impactful web solutions that provide value to users and
-                        businesses alike.
+                <div class="header-text">
+                    <p class="mini-intro">Web Developer</p>
+                    <h1 class="typing-header">
+                        Hi, I'm <span class="auto-type" style="color: #ae8035;"></span>
+                    </h1>
+                    <h3>From NOWHERE...</h3>
+                    <p class="header-description">
+                        I am a passionate web developer with<br>
+                        a keen interest in creating dynamic and<br>
+                        responsive web applications.<br>
+                        I love coding , enjoy learning AI and new technologies.
                     </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <div class="hire-me-container">
+                        <a href="#contact" class="hire-me-btn">Hire Me</a>
                     </div>
 
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Front-End Developer</span> <br>Mastering HTML5, CSS3, and JavaScript to build
-                                clean, responsive, and modern websites. Focused on writing scalable code and following
-                                best UI practices across devices..</li>
-                            <li><span>C Programming & Logic Building</span><br>Built a strong foundation in core
-                                programming concepts—pointers, arrays, structures, and file handling—while developing
-                                problem-solving skills, algorithmic thinking, and debugging expertise.</li>
-                            <li><span>Git & GitHub Workflow</span><br>Skilled in version control, collaborative
-                                development, and seamless live deployments via GitHub Pages.</li>
-                            <li><span>UI/UX Visionary</span><br>Passionate about Designing intuitive layouts with modern
-                                tools and animations.</li>
-                            <li><span>Back-End learnings</span><br>Diving into dynamic server-side development with
-                                Node.js, Express, and MongoDB — while expanding backend capabilities through Java,
-                                Python, and C. Building RESTful APIs, managing databases, and connecting the front and
-                                back seamlessly for full-stack power.</li>
-                            <li><span>Skills that pay bills</span> <br>I have got enough skills to pay my own
-                                bills—coding is not just a passion, it is a paycheck in progress.</li>
-                        </ul>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+
+        <!-------- About section --------->
+        <!-------- About section --------->
+
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="about-col-1">
+                        <img src="https://i.postimg.cc/280B05tD/Img.png" alt="Profile Picture">
                     </div>
 
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Front-End Developer</span> <br>Mastering HTML5, CSS3, and JavaScript to build
-                                clean, responsive, and modern websites. Focused on writing scalable code and following
-                                best UI practices across devices..</li>
-                            <li><span>C Programming & Logic Building</span><br>Built a strong foundation in core
-                                programming concepts—pointers, arrays, structures, and file handling—while developing
-                                problem-solving skills, algorithmic thinking, and debugging expertise.</li>
-                            <li><span>Back-End learnings</span><br>Diving into dynamic server-side development with
-                                Node.js, Express, and MongoDB — while expanding backend capabilities through Java,
-                                Python, and C. Building RESTful APIs, managing databases, and connecting the front and
-                                back seamlessly for full-stack power.</li>
-                            <li><span>Skills that pay bills</span> <br>I have got enough skills to pay my own
-                                bills—coding is not just a passion, it is a paycheck in progress.</li>
-                        </ul>
-                    </div>
+                    <div class="about-col-2">
+                        <h1 class="about-sub-title">About Me</h1>
+                        <p class="about-description">
+                            I am Abu Umar, a web developer with a passion for creating dynamic and responsive web
+                            applications. I have experience in various web technologies and enjoy learning new skills to
+                            enhance my development capabilities.
+                            My journey in web development started with a fascination for how websites work and the
+                            technologies behind them. Over the years, I have honed my skills in HTML, CSS, JavaScript,
+                            and
+                            various frameworks to build user-friendly and efficient web applications.
+                            I believe in continuous learning and strive to stay updated with the latest trends in web
+                            development. My goal is to create impactful web solutions that provide value to users and
+                            businesses alike.
+                        </p>
 
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Front-End Developer</span> <br>Mastering HTML5, CSS3, and JavaScript to build
-                                clean, responsive, and modern websites. Focused on writing scalable code and following
-                                best UI practices across devices..</li>
-                            <li><span>Skills that pay bills</span> <br>I have got enough skills to pay my own
-                                bills—coding is not just a passion, it is a paycheck in progress.</li>
-                        </ul>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-End Developer</span> <br>Mastering HTML5, CSS3, and JavaScript to build
+                                    clean, responsive, and modern websites. Focused on writing scalable code and
+                                    following
+                                    best UI practices across devices..</li>
+                                <li><span>C Programming & Logic Building</span><br>Built a strong foundation in core
+                                    programming concepts—pointers, arrays, structures, and file handling—while
+                                    developing
+                                    problem-solving skills, algorithmic thinking, and debugging expertise.</li>
+                                <li><span>Git & GitHub Workflow</span><br>Skilled in version control, collaborative
+                                    development, and seamless live deployments via GitHub Pages.</li>
+                                <li><span>UI/UX Visionary</span><br>Passionate about Designing intuitive layouts with
+                                    modern
+                                    tools and animations.</li>
+                                <li><span>Back-End learnings</span><br>Diving into dynamic server-side development with
+                                    Node.js, Express, and MongoDB — while expanding backend capabilities through Java,
+                                    Python, and C. Building RESTful APIs, managing databases, and connecting the front
+                                    and
+                                    back seamlessly for full-stack power.</li>
+                                <li><span>Skills that pay bills</span> <br>I have got enough skills to pay my own
+                                    bills—coding is not just a passion, it is a paycheck in progress.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+
+                            <h3>“I may not have any official work experience yet, Currently, I am actively learning web
+                                development through online courses and tutorials on platforms like GeeksforGeeks, LeetCode,
+                                YouTube and nareshit courses. I have actively worked on several
+                                personal projects that helped me gain hands-on skills in web development and
+                                programming.These projects gave me practical exposure to technologies like HTML, CSS,
+                                and C programming, and I’m continuously expanding my knowledge by building real-world
+                                applications. Working independently on these projects has also improved my
+                                problem-solving ability, self-learning skills, and consistency.”</h3>
+                            <br><br>
+                            <p>~ Abu Umar</p>
+
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Matriculation</span> <br>Completed my secondary education with a focus on
+                                    science and mathematics at the St. Xavier School and secured 85%</li>
+                                <li><span>Intermediate</span> <br> I completed my Intermediate by taking science at
+                                    JLNUM College and secured 70%</li>
+                                <li><span>Btech</span> <br> I am currently pursuing my B.Tech in Computer Science at IES
+                                    Institute of Technology.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
-    <!-------- Portfolio Section --------->
-    <!-------- Portfolio section --------->
+        <!-------- Portfolio Section --------->
+        <!-------- Portfolio section --------->
 
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="port-sub-title">Portfolio</h1>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="port-sub-title">Portfolio</h1>
 
-            <!-- Project 1 -->
-            <div class="row">
-                <div class="project1-col-1">
+                <!-- Project 1 -->
+                <div class="row">
+                    <div class="project1-col-1">
 
-                    <a href="https://ifass.github.io/Factorial/" target="_blank">
-                        <img src="https://i.postimg.cc/1Xv66bp7/Screenshot-5.png" alt="Project 1">
-                    </a>
+                        <a href="https://ifass.github.io/Factorial/" target="_blank">
+                            <img src="https://i.postimg.cc/1Xv66bp7/Screenshot-5.png" alt="Project 1">
+                        </a>
 
+                    </div>
+
+                    <div class="project1-col-2">
+                        <h2 class="project-title">Factorial Finder</h2>
+                        <h4 class="project-sub-title">My First Website</h4>
+                        <p class="project-description">
+                            Back in 9th grade, I created my very first website. At the time, I had only a little
+                            exposure to
+                            HTML,<br> CSS, and JavaScript through YouTube tutorials, but I was curious
+                            to build something useful.<br> Since I loved mathematics, I decided to work on a problem I
+                            often faced—calculating factorials.
+                            <br><br>
+                            Manually solving factorials used to take me a lot of time, so I built a simple
+                            website that<br> could calculate the factorial of any number instantly. This project not
+                            only
+                            made my math practice<br> easier but also gave me the confidence to continue learning web
+                            development<br> and problem-solving through coding.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="project1-col-2">
-                    <h2 class="project-title">Factorial Finder</h2>
-                    <h4 class="project-sub-title">My First Website</h4>
-                    <p class="project-description">
-                        Back in 9th grade, I created my very first website. At the time, I had only a little exposure to
-                        HTML,<br> CSS, and JavaScript through YouTube tutorials, but I was curious
-                        to build something useful.<br> Since I loved mathematics, I decided to work on a problem I
-                        often faced—calculating factorials.
-                        <br><br>
-                        Manually solving factorials used to take me a lot of time, so I built a simple
-                        website that<br> could calculate the factorial of any number instantly. This project not only
-                        made my math practice<br> easier but also gave me the confidence to continue learning web
-                        development<br> and problem-solving through coding.
-                    </p>
+
+
+
+                <!-- Project 2 -->
+                <div class="row">
+                    <div class="project1-col-1">
+
+                        <a href="https://alamenterprises.godaddysites.com/" target="_blank">
+                            <img src="https://i.postimg.cc/6Q9WJPY9/ECommerce-Ui.png" alt="Project 3">
+                        </a>
+
+                    </div>
+                    <div class="project1-col-2">
+                        <h2 class="project-title">E-Commerce Website</h2>
+                        <h4 class="project-sub-title">Full-Stack E-Commerce Website</h4>
+                        <p class="project-description">This project is a fully functional e-commerce website that
+                            delivers
+                            the core experience of a modern online store. I created this website during my 12th grade
+                            for my
+                            father’s company, Alam Enterprises, a furniture manufacturing business. Although it was
+                            never
+                            used commercially and left for testing purposes, it took a lot of time and effort to
+                            complete.
+                            Visitors can browse through a variety of products, view them in a clean gallery layout, and
+                            quickly find what they need using the built-in search bar. The shopping cart makes the
+                            process
+                            smooth and interactive, allowing users to add, remove, and review items with ease before
+                            checkout.<br><br>
+
+                            Beyond shopping, the website also features a dedicated blogs section for sharing updates,
+                            ideas,
+                            and product-related insights, adding extra value for users. To make communication
+                            effortless, it
+                            includes multiple contact options such as WhatsApp, Instagram, and Facebook, each equipped
+                            with
+                            pre-written messages for instant connection. Users can easily log in to the website, buy
+                            products, track their orders, and even pay bills securely. While still in its testing phase,
+                            the
+                            site is already live and demonstrates nearly all the features expected from a complete
+                            e-commerce platform.
+                    </div>
                 </div>
             </div>
+        </div>
 
 
 
 
-            <!-- Project 2 -->
-            <div class="row">
-                <div class="project1-col-1">
 
-                    <a href="https://alamenterprises.godaddysites.com/" target="_blank">
-                        <img src="https://i.postimg.cc/6Q9WJPY9/ECommerce-Ui.png" alt="Project 3">
-                    </a>
 
-                </div>
-                <div class="project1-col-2">
-                    <h2 class="project-title">E-Commerce Website</h2>
-                    <h4 class="project-sub-title">Full-Stack E-Commerce Website</h4>
-                    <p class="project-description">This project is a fully functional e-commerce website that delivers
-                        the core experience of a modern online store. I created this website during my 12th grade for my
-                        father’s company, Alam Enterprises, a furniture manufacturing business. Although it was never
-                        used commercially and left for testing purposes, it took a lot of time and effort to complete.
-                        Visitors can browse through a variety of products, view them in a clean gallery layout, and
-                        quickly find what they need using the built-in search bar. The shopping cart makes the process
-                        smooth and interactive, allowing users to add, remove, and review items with ease before
-                        checkout.<br><br>
+        <!-- Project 3 -->
+        <div class="row">
+            <div class="project1-col-1">
 
-                        Beyond shopping, the website also features a dedicated blogs section for sharing updates, ideas,
-                        and product-related insights, adding extra value for users. To make communication effortless, it
-                        includes multiple contact options such as WhatsApp, Instagram, and Facebook, each equipped with
-                        pre-written messages for instant connection. Users can easily log in to the website, buy
-                        products, track their orders, and even pay bills securely. While still in its testing phase, the
-                        site is already live and demonstrates nearly all the features expected from a complete
-                        e-commerce platform.
-                </div>
+                <a href="https://ifass.github.io/EchoTunes-Abs/" target="_blank">
+                    <img src="https://i.postimg.cc/vB8tV8Wd/Screenshot-3.png" alt="Project 2">
+                </a>
+
+            </div>
+            <div class="project1-col-2">
+                <h2 class="project-title">Music Streaming Website</h2>
+                <h4 class="project-sub-title">EchoTunes by Abs</h4>
+                <p class="project-description">A personal blog platform developed using React and Node.js. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Possimus distinctio saepe sed doloribus
+                    quaerat cupiditate tempora suscipit eum voluptatem eligendi est ut, hic dolore, fugit eaque
+                    accusamus iusto qui ex!<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reprehenderit sint officia, sequi
+                    sapiente repellat. Facilis voluptate voluptatum vero aspernatur vitae asperiores placeat, et
+                    quod repudiandae? Voluptas, beatae autem vel maxime corporis enim consequuntur at facere fuga
+                    numquam saepe!<br><br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla qui modi perferendis. Magni, officia
+                    blanditiis similique neque eaque non veritatis quam consequuntur, modi dolorum dolor magnam culpa
+                    dicta
+                    quod tenetur assumenda incidunt nobis aperiam quos animi a eos mollitia. Odit aliquam est voluptate
+                    eligendi possimus voluptatum enim quisquam necessitatibus dolor!</p>
             </div>
         </div>
-    </div>
 
 
+        <!-- Project 4 -->
+        <div class="row">
+            <div class="project1-col-1">
 
+                <a href="https://ifass.github.io/portfolio/" target="_blank">
+                    <img src="https://i.postimg.cc/vTR3pWKp/Portfolio-IMG.png" alt="Project 2">
+                </a>
 
-
-
-    <!-- Project 3 -->
-    <div class="row">
-        <div class="project1-col-1">
-
-            <a href="https://ifass.github.io/EchoTunes-Abs/" target="_blank">
-                <img src="https://i.postimg.cc/vB8tV8Wd/Screenshot-3.png" alt="Project 2">
-            </a>
-
+            </div>
+            <div class="project1-col-2">
+                <h2 class="project-title">My Portfolio</h2>
+                <h4 class="project-sub-title">The Website itself</h4>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore minus
+                    explicabo voluptas, fugiat omnis sint culpa doloribus minima, soluta officia alias ad, cumque
+                    temporibus
+                    quibusdam dolor adipisci velit facilis repellendus?<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reprehenderit sint officia, sequi
+                    sapiente repellat. Facilis voluptate voluptatum vero aspernatur vitae asperiores placeat, et
+                    quod repudiandae? Voluptas, beatae autem vel maxime corporis enim consequuntur at facere fuga
+                    numquam saepe!<br><br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla qui modi perferendis. Magni, officia
+                    blanditiis similique neque eaque non verita consequuntur, modi dolorum dolor magnam culpa dicta
+                    quod tenetur assumenda incidunt nobis aperiam quos animi a eos mollitia. Odit aliquam est voluptate
+                    eligendi possimus voluptatum enim quisquam necessitatibus dolor!</p>
+            </div>
         </div>
-        <div class="project1-col-2">
-            <h2 class="project-title">Music Streaming Website</h2>
-            <h4 class="project-sub-title">EchoTunes by Abs</h4>
-            <p class="project-description">A personal blog platform developed using React and Node.js. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Possimus distinctio saepe sed doloribus
-                quaerat cupiditate tempora suscipit eum voluptatem eligendi est ut, hic dolore, fugit eaque
-                accusamus iusto qui ex!<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reprehenderit sint officia, sequi
-                sapiente repellat. Facilis voluptate voluptatum vero aspernatur vitae asperiores placeat, et
-                quod repudiandae? Voluptas, beatae autem vel maxime corporis enim consequuntur at facere fuga
-                numquam saepe!<br><br>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla qui modi perferendis. Magni, officia
-                blanditiis similique neque eaque non veritatis quam consequuntur, modi dolorum dolor magnam culpa dicta
-                quod tenetur assumenda incidunt nobis aperiam quos animi a eos mollitia. Odit aliquam est voluptate
-                eligendi possimus voluptatum enim quisquam necessitatibus dolor!</p>
+
+
+        <div class="last">
+            <h1 class="last1">
+                🛠️🛠️🛠️🛠️🛠️🛠️🛠️🚧🚧🚧🚧🚧🚧🛠️🛠️🛠️🛠️🛠️🛠️🛠️<br><br><br><br>
+                This website is still under construction… </h1>
+            <h2 class="last2">—because perfection asks time⏳</h2>
+
+            <p class="last3">This website is still under development. Currently, it is designed mainly for
+                laptops/desktops,
+                and <br>
+                <span class="last4"> ❌❌❌responsiveness for mobile and tablet devices has not been implemented yet ❌❌❌
+                    <br>
+                </span> — I will be working on that soon
+                to ensure a better user experience across all screens. Some sections, such as Education, Projects, and
+                Contact, are not fully completed, and a few project descriptions still use placeholder (lorem) text for
+                structure. The overall design for laptop view is nearly finalized, but updates and improvements for
+                mobile
+                and tablet layouts are in progress. I plan to complete these pending sections and enhancements shortly.
+            </p>
+            <p class="last41">Wrapping it up soon..........</p>
+            <p class="last5">Abu Umar</p>
         </div>
-    </div>
 
 
-    <!-- Project 4 -->
-    <div class="row">
-        <div class="project1-col-1">
-
-            <a href="https://ifass.github.io/portfolio/" target="_blank">
-                <img src="https://i.postimg.cc/vTR3pWKp/Portfolio-IMG.png" alt="Project 2">
-            </a>
-
-        </div>
-        <div class="project1-col-2">
-            <h2 class="project-title">My Portfolio</h2>
-            <h4 class="project-sub-title">The Website itself</h4>
-            <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore minus
-                explicabo voluptas, fugiat omnis sint culpa doloribus minima, soluta officia alias ad, cumque temporibus
-                quibusdam dolor adipisci velit facilis repellendus?<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reprehenderit sint officia, sequi
-                sapiente repellat. Facilis voluptate voluptatum vero aspernatur vitae asperiores placeat, et
-                quod repudiandae? Voluptas, beatae autem vel maxime corporis enim consequuntur at facere fuga
-                numquam saepe!<br><br>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla qui modi perferendis. Magni, officia
-                blanditiis similique neque eaque non verita consequuntur, modi dolorum dolor magnam culpa dicta
-                quod tenetur assumenda incidunt nobis aperiam quos animi a eos mollitia. Odit aliquam est voluptate
-                eligendi possimus voluptatum enim quisquam necessitatibus dolor!</p>
-        </div>
-    </div>
-
-
-    <div class="last">
-        <h1 class="last1">
-            🛠️🛠️🛠️🛠️🛠️🛠️🛠️🚧🚧🚧🚧🚧🚧🛠️🛠️🛠️🛠️🛠️🛠️🛠️<br><br><br><br>
-            This website is still under construction… </h1>
-        <h2 class="last2">—because perfection asks time⏳</h2>
-
-        <p class="last3">This website is still under development. Currently, it is designed mainly for laptops/desktops,
-            and <br>
-            <span class="last4"> ❌❌❌responsiveness for mobile and tablet devices has not been implemented yet ❌❌❌ <br>
-            </span> — I will be working on that soon
-            to ensure a better user experience across all screens. Some sections, such as Education, Projects, and
-            Contact, are not fully completed, and a few project descriptions still use placeholder (lorem) text for
-            structure. The overall design for laptop view is nearly finalized, but updates and improvements for mobile
-            and tablet layouts are in progress. I plan to complete these pending sections and enhancements shortly.
-        </p>
-        <p class="last41">Wrapping it up soon..........</p>
-        <p class="last5">Abu Umar</p>
-    </div>
-
-
-    <!-------- Contact Section --------->
-    <!-------- Contact Section --------->
+        <!-------- Contact Section --------->
+        <!-------- Contact Section --------->
 
 
 
-    <!-- <script>
+        <!-- <script>
            var tablinks = document.getElementsByClassName("tab-links");
            var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -381,24 +399,24 @@
 
 
 
-       <!-- Preloader  -->
+        <!-- Preloader  -->
         <!-- Preloader  -->
 
-  <script>
-    // Wait for window to fully load
-    window.addEventListener('load', () => {
-      // Force at least 1.5 seconds delay for the preloader
-      setTimeout(() => {
-        document.getElementById('preloader').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-      }, 5000); // 1500ms = 1.5 seconds
-    });
-  </script>
+        <script>
+            // Wait for window to fully load
+            window.addEventListener('load', () => {
+                // Force at least 1.5 seconds delay for the preloader
+                setTimeout(() => {
+                    document.getElementById('preloader').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                }, 5000); // 1500ms = 1.5 seconds
+            });
+        </script>
 
 
 
-       <!-- Loading Animation -->
-    <script
+        <!-- Loading Animation -->
+        <!-- <script
   src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
   type="module"
 ></script>
@@ -409,48 +427,48 @@
   speed="2"
   autoplay
   loop
-></dotlottie-wc>
+></dotlottie-wc> -->
 
 
         <!-- Link tab -->
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
-            for (var tablink of tablinks) {
-                tablink.classList.remove("active-link");
+            function opentab(tabname) {
+                for (var tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (var tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
             }
-            for (var tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+        </script>
 
 
-    <!-- typed.js Script -->
-    <!-- typed.js Script -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- typed.js Script -->
+        <!-- typed.js Script -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script>
-        var typed = new Typed('.auto-type', {
-            strings: ['ABU UMAR', 'Web Developer', 'Software Engineer', 'AI Enthusiast'],
-            typeSpeed: 200,
-            backSpeed: 150,
-            loop: true
-        });  
-    </script>
+        <script>
+            var typed = new Typed('.auto-type', {
+                strings: ['ABU UMAR', 'Web Developer', 'Software Engineer', 'AI Enthusiast'],
+                typeSpeed: 200,
+                backSpeed: 150,
+                loop: true
+            });  
+        </script>
 
 
 
-    <!-- Menu Toggle Script -->
-    <!-- Menu Toggle Script -->
+        <!-- Menu Toggle Script -->
+        <!-- Menu Toggle Script -->
 
 
-    <!-- <script>
+        <!-- <script>
         function toggleMenu() {
             var menu = document.getElementById('nav-links');
             menu.classList.toggle('show');
@@ -459,44 +477,44 @@
 
 
 
-    <!-- // Smooth scroll after animation -->
+        <!-- // Smooth scroll after animation -->
 
-    <script>
-        document.querySelectorAll('#nav-links a').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault(); // stop instant jump
+        <script>
+            document.querySelectorAll('#nav-links a').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // stop instant jump
 
-                const targetId = this.getAttribute('href'); // e.g. #about
-                const target = document.querySelector(targetId);
+                    const targetId = this.getAttribute('href'); // e.g. #about
+                    const target = document.querySelector(targetId);
 
-                // Delay scroll by 1.2 seconds (1200ms)
-                setTimeout(() => {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }, 1200); // 1200ms = 1.2s
+                    // Delay scroll by 1.2 seconds (1200ms)
+                    setTimeout(() => {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }, 1200); // 1200ms = 1.2s
+                });
             });
-        });
-    </script>
+        </script>
 
 
 
 
-    <!-- Popup mesz -->
+        <!-- Popup mesz -->
 
-    <script>
-        window.onload = function () {
-            if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                alert("👋 Hey, this is Abu Umar!\n\n✨ First of all, thanks for visiting my portfolio website.\n\n⚠️ But this website is not compatible for mobile right now.\n💻 Please open it on a laptop/desktop for the best experience.");
-            }
-        };
-    </script>
-
-
+        <script>
+            window.onload = function () {
+                if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                    alert("👋 Hey, this is Abu Umar!\n\n✨ First of all, thanks for visiting my portfolio website.\n\n⚠️ But this website is not compatible for mobile right now.\n💻 Please open it on a laptop/desktop for the best experience.");
+                }
+            };
+        </script>
 
 
 
-</body>
+
+
+    </body>
 
 </html>
